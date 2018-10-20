@@ -5,7 +5,10 @@ export default class Welcome extends Component {
   render() {
     return (
       <div>
-        <p>Welcome!</p>
+        <p>
+          Next.js starter with styled-components, Material-UI, and React Context
+          API
+        </p>
       </div>
     );
   }

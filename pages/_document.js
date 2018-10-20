@@ -1,3 +1,5 @@
+// _document.js removes flashing of unstyled html with styled-components
+
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 

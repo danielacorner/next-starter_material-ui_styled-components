@@ -2,21 +2,12 @@ import React, { Component } from 'react';
 import Meta from './Meta';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Nav from './Nav';
-// import withMui from './hocs/withMui';
 import ContextProvider from './ContextProvider';
-
-// import React from 'react';
-// import Head from 'next/head';
-// import injectTapEventPlugin from 'react-tap-event-plugin';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-
-try {
-  injectTapEventPlugin();
-} catch (e) {}
 
 const muiTheme = createMuiTheme({ userAgent: false });
 
+// global theme can be accessed with ${props => props.theme.$} (add snippet ':tp')
 const theme = {
   red: '#FF0000',
   black: '#393939',
@@ -28,6 +19,7 @@ const theme = {
 };
 
 const StyledPage = styled.div`
+  /* always add a background colour for colour inversion accessibility */
   background: white;
   color: ${props => props.theme.black};
 `;
@@ -85,4 +77,3 @@ class Page extends Component {
 }
 
 export default Page;
-// export default withMui(Page);
