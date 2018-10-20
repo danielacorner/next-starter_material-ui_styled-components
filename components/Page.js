@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Meta from './Meta';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Nav from './Nav';
+// import withMui from './hocs/withMui';
 
 const theme = {
   red: '#FF0000',
@@ -52,7 +53,7 @@ a {
 }
 `;
 
-export default class Page extends Component {
+class Page extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
@@ -65,3 +66,6 @@ export default class Page extends Component {
     );
   }
 }
+
+export default Page;
+// export default withMui(Page);

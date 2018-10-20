@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppContext", function() { return AppContext; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\StreetSmarts\\street-smarts-prototype\\newFrontend\\frontend\\components\\ContextProvider.js";
+var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\components\\ContextProvider.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -100,7 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\StreetSmarts\\street-smarts-prototype\\newFrontend\\frontend\\components\\Meta.js";
+var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\components\\Meta.js";
 
 
 
@@ -191,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _ContextProvider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ContextProvider */ "./components/ContextProvider.js");
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\StreetSmarts\\street-smarts-prototype\\newFrontend\\frontend\\components\\Nav.js";
+    _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\components\\Nav.js";
 
 
 
@@ -347,13 +347,12 @@ var Nav = function Nav() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Page; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
-var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\StreetSmarts\\street-smarts-prototype\\newFrontend\\frontend\\components\\Page.js";
+var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\components\\Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -388,6 +387,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+ // import withMui from './hocs/withMui';
 
 var theme = {
   red: '#FF0000',
@@ -430,31 +430,31 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 61
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 62
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 63
         },
         __self: this
       }, this.props.children)));
@@ -464,7 +464,7 @@ function (_Component) {
   return Page;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-
+/* harmony default export */ __webpack_exports__["default"] = (Page); // export default withMui(Page);
 
 /***/ }),
 
@@ -1561,6 +1561,8 @@ var _ownerWindow = _interopRequireDefault(__webpack_require__(/*! ../utils/owner
 
 var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
 
+var _NoSsr = _interopRequireDefault(__webpack_require__(/*! ../NoSsr */ "./node_modules/@material-ui/core/NoSsr/index.js"));
+
 var _focusVisible = __webpack_require__(/*! ./focusVisible */ "./node_modules/@material-ui/core/ButtonBase/focusVisible.js");
 
 var _TouchRipple = _interopRequireDefault(__webpack_require__(/*! ./TouchRipple */ "./node_modules/@material-ui/core/ButtonBase/TouchRipple.js"));
@@ -1827,12 +1829,13 @@ function (_React$Component) {
           type = _this$props2.type,
           other = (0, _objectWithoutProperties2.default)(_this$props2, ["action", "buttonRef", "centerRipple", "children", "classes", "className", "component", "disabled", "disableRipple", "disableTouchRipple", "focusRipple", "focusVisibleClassName", "onBlur", "onFocus", "onFocusVisible", "onKeyDown", "onKeyUp", "onMouseDown", "onMouseLeave", "onMouseUp", "onTouchEnd", "onTouchMove", "onTouchStart", "tabIndex", "TouchRippleProps", "type"]);
       var className = (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes.disabled, disabled), (0, _defineProperty2.default)(_classNames, classes.focusVisible, this.state.focusVisible), (0, _defineProperty2.default)(_classNames, focusVisibleClassName, this.state.focusVisible), _classNames), classNameProp);
-      var buttonProps = {};
       var ComponentProp = component;
 
       if (ComponentProp === 'button' && other.href) {
         ComponentProp = 'a';
       }
+
+      var buttonProps = {};
 
       if (ComponentProp === 'button') {
         buttonProps.type = type || 'button';
@@ -1842,6 +1845,7 @@ function (_React$Component) {
       }
 
       return _react.default.createElement(ComponentProp, (0, _extends2.default)({
+        className: className,
         onBlur: this.handleBlur,
         onFocus: this.handleFocus,
         onKeyDown: this.handleKeyDown,
@@ -1852,13 +1856,12 @@ function (_React$Component) {
         onTouchEnd: this.handleTouchEnd,
         onTouchMove: this.handleTouchMove,
         onTouchStart: this.handleTouchStart,
-        tabIndex: disabled ? '-1' : tabIndex,
-        className: className,
-        ref: buttonRef
-      }, buttonProps, other), children, !disableRipple && !disabled ? _react.default.createElement(_TouchRipple.default, (0, _extends2.default)({
+        ref: buttonRef,
+        tabIndex: disabled ? '-1' : tabIndex
+      }, buttonProps, other), children, !disableRipple && !disabled ? _react.default.createElement(_NoSsr.default, null, _react.default.createElement(_TouchRipple.default, (0, _extends2.default)({
         innerRef: this.onRippleRef,
         center: centerRipple
-      }, TouchRippleProps)) : null);
+      }, TouchRippleProps))) : null);
     }
   }], [{
     key: "getDerivedStateFromProps",
@@ -2608,8 +2611,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function createRippleHandler(instance, eventName, action, cb) {
-  return function handleEvent(event) {
+/* eslint-disable import/no-mutable-exports */
+var createRippleHandler = function createRippleHandler(instance, eventName, action, cb) {
+  return function (event) {
     if (cb) {
       cb.call(instance, event);
     }
@@ -2633,6 +2637,14 @@ function createRippleHandler(instance, eventName, action, cb) {
     }
 
     return true;
+  };
+};
+/* istanbul ignore if */
+
+
+if (typeof window === 'undefined') {
+  createRippleHandler = function createRippleHandler() {
+    return function () {};
   };
 }
 
@@ -2941,6 +2953,166 @@ Object.defineProperty(exports, "default", {
 });
 
 var _IconButton = _interopRequireDefault(__webpack_require__(/*! ./IconButton */ "./node_modules/@material-ui/core/IconButton/IconButton.js"));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/NoSsr/NoSsr.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@material-ui/core/NoSsr/NoSsr.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/createClass.js"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
+
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/inherits.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _exactProp = _interopRequireDefault(__webpack_require__(/*! ../utils/exactProp */ "./node_modules/@material-ui/core/utils/exactProp.js"));
+
+/**
+ * NoSsr purposely removes components from the subject of Server Side Rendering (SSR).
+ *
+ * This component can be useful in a variety of situations:
+ * - Escape hatch for broken dependencies not supporting SSR.
+ * - Improve the time-to-first paint on the client by only rendering above the fold.
+ * - Reduce the rendering time on the server.
+ * - Under too heavy server load, you can turn on service degradation.
+ */
+var NoSsr =
+/*#__PURE__*/
+function (_React$Component) {
+  (0, _inherits2.default)(NoSsr, _React$Component);
+
+  function NoSsr() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    (0, _classCallCheck2.default)(this, NoSsr);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(NoSsr)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this.mounted = false;
+    _this.state = {
+      mounted: false
+    };
+    return _this;
+  }
+
+  (0, _createClass2.default)(NoSsr, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      this.mounted = true;
+
+      if (this.props.defer) {
+        // Wondering why we use two RAFs? Check this video out:
+        // https://www.youtube.com/watch?v=cCOL7MC4Pl0
+        requestAnimationFrame(function () {
+          // The browser should be about to render the DOM that React commited at this point.
+          // We don't want to interrupt. Let's wait the next raf.
+          requestAnimationFrame(function () {
+            if (_this2.mounted) {
+              _this2.setState({
+                mounted: true
+              });
+            }
+          });
+        });
+      } else {
+        this.setState({
+          mounted: true
+        }); // eslint-disable-line react/no-did-mount-set-state
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.mounted = false;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          children = _this$props.children,
+          fallback = _this$props.fallback;
+      return this.state.mounted ? children : fallback;
+    }
+  }]);
+  return NoSsr;
+}(_react.default.Component);
+
+NoSsr.propTypes =  true ? {
+  children: _propTypes.default.node.isRequired,
+
+  /**
+   * If `true`, the component will not only prevent server side rendering.
+   * It will also defer the rendering of the children into a different screen frame.
+   */
+  defer: _propTypes.default.bool,
+
+  /**
+   * The fallback content to display.
+   */
+  fallback: _propTypes.default.node
+} : undefined;
+NoSsr.propTypes =  true ? (0, _exactProp.default)(NoSsr.propTypes) : undefined;
+NoSsr.defaultProps = {
+  defer: false,
+  fallback: null
+};
+var _default = NoSsr;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/NoSsr/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@material-ui/core/NoSsr/index.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function get() {
+    return _NoSsr.default;
+  }
+});
+
+var _NoSsr = _interopRequireDefault(__webpack_require__(/*! ./NoSsr */ "./node_modules/@material-ui/core/NoSsr/NoSsr.js"));
 
 /***/ }),
 
@@ -3458,8 +3630,6 @@ var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @
 
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var _warning = _interopRequireDefault(__webpack_require__(/*! warning */ "./node_modules/@material-ui/core/node_modules/warning/warning.js"));
-
 var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
 
 var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
@@ -3468,7 +3638,7 @@ var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withS
 
 var _helpers = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/utils/helpers.js");
 
-var _typographyMigration = _interopRequireDefault(__webpack_require__(/*! ../styles/typographyMigration */ "./node_modules/@material-ui/core/styles/typographyMigration.js"));
+var _chainPropTypes = _interopRequireDefault(__webpack_require__(/*! ../utils/chainPropTypes */ "./node_modules/@material-ui/core/utils/chainPropTypes.js"));
 
 var styles = function styles(theme) {
   return {
@@ -3616,41 +3786,29 @@ var styles = function styles(theme) {
 };
 
 exports.styles = styles;
+var nextVariants = {
+  display4: 'h1',
+  display3: 'h2',
+  display2: 'h3',
+  display1: 'h4',
+  headline: 'h5',
+  title: 'h6',
+  subheading: 'subtitle1'
+};
 
-function nextVariantMapping(variant) {
-  var nextVariant = {
-    display4: 'h1',
-    display3: 'h2',
-    display2: 'h3',
-    display1: 'h4',
-    headline: 'h5',
-    title: 'h6',
-    subheading: 'subtitle1'
-  }[variant]; // already v2
-
-  if (!nextVariant) {
-    return variant;
-  }
-
-  return nextVariant;
-}
-
-function getVariant(theme, props, variantProp) {
+function getVariant(theme, variantProp) {
   var typography = theme.typography;
   var variant = variantProp;
 
   if (!variant) {
     variant = typography.useNextVariants ? 'body2' : 'body1';
-  }
+  } // complete v2 switch
 
-   true ? (0, _warning.default)(typography.suppressDeprecationWarnings || props.internalDeprecatedVariant && typography.useNextVariants || !_typographyMigration.default.deprecatedVariants.includes(variant), 'Material-UI: You are using the deprecated typography variant ' + "".concat(variant, " that will be removed in the next major release. ").concat(_typographyMigration.default.migrationGuideMessage)) : undefined; // complete v2 switch
 
   if (typography.useNextVariants) {
-    return nextVariantMapping(variant);
-  } // v1 => restyle warnings
+    variant = nextVariants[variant] || variant;
+  }
 
-
-   true ? (0, _warning.default)(typography.suppressDeprecationWarnings || !_typographyMigration.default.restyledVariants.includes(variant), 'Material-UI: You are using the typography variant ' + "".concat(variant, " which will be restyled in the next major release. ").concat(_typographyMigration.default.migrationGuideMessage)) : undefined;
   return variant;
 }
 
@@ -3691,7 +3849,7 @@ function Typography(props) {
       theme = props.theme,
       variantProp = props.variant,
       other = (0, _objectWithoutProperties2.default)(props, ["align", "classes", "className", "color", "component", "gutterBottom", "headlineMapping", "internalDeprecatedVariant", "noWrap", "paragraph", "theme", "variant"]);
-  var variant = getVariant(theme, props, variantProp);
+  var variant = getVariant(theme, variantProp);
   var className = (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes[variant], variant !== 'inherit'), (0, _defineProperty2.default)(_classNames, classes["color".concat((0, _helpers.capitalize)(color))], color !== 'default'), (0, _defineProperty2.default)(_classNames, classes.noWrap, noWrap), (0, _defineProperty2.default)(_classNames, classes.gutterBottom, gutterBottom), (0, _defineProperty2.default)(_classNames, classes.paragraph, paragraph), (0, _defineProperty2.default)(_classNames, classes["align".concat((0, _helpers.capitalize)(align))], align !== 'inherit'), _classNames), classNameProp);
   var Component = componentProp || (paragraph ? 'p' : headlineMapping[variant] || defaultHeadlineMapping[variant]) || 'span';
   return _react.default.createElement(Component, (0, _extends2.default)({
@@ -3770,8 +3928,16 @@ Typography.propTypes =  true ? {
    * Applies the theme typography styles.
    * Use `body1` as the default value with the legacy implementation and `body2` with the new one.
    */
-  variant: _propTypes.default.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline', 'srOnly', 'inherit', // deprecated
-  'display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'])
+  variant: (0, _chainPropTypes.default)(_propTypes.default.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline', 'srOnly', 'inherit', // deprecated
+  'display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading']), function (props) {
+    var deprecatedVariants = ['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'];
+
+    if (props.theme.typography.useNextVariants && !props.internalDeprecatedVariant && deprecatedVariants.indexOf(props.variant) !== -1) {
+      return new Error('You are using a deprecated typography variant: ' + "`".concat(props.variant, "` that will be removed in the next major release.") + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2');
+    }
+
+    return null;
+  })
 } : undefined;
 Typography.defaultProps = {
   align: 'inherit',
@@ -5260,7 +5426,7 @@ function createPalette(palette) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+/* WEBPACK VAR INJECTION */(function(global) {
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
@@ -5276,8 +5442,6 @@ var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @
 var _deepmerge = _interopRequireDefault(__webpack_require__(/*! deepmerge */ "./node_modules/deepmerge/dist/es.js"));
 
 var _warning = _interopRequireDefault(__webpack_require__(/*! warning */ "./node_modules/@material-ui/core/node_modules/warning/warning.js"));
-
-var _typographyMigration = _interopRequireDefault(__webpack_require__(/*! ./typographyMigration */ "./node_modules/@material-ui/core/styles/typographyMigration.js"));
 
 // < 1kb payload overhead when lodash/merge is > 3kb.
 function round(value) {
@@ -5307,19 +5471,14 @@ function createTypography(palette, typography) {
       fontWeightMedium = _ref$fontWeightMedium === void 0 ? 500 : _ref$fontWeightMedium,
       _ref$htmlFontSize = _ref.htmlFontSize,
       htmlFontSize = _ref$htmlFontSize === void 0 ? 16 : _ref$htmlFontSize,
-      _ref$suppressDeprecat = _ref.suppressDeprecationWarnings,
-      suppressDeprecationWarnings = _ref$suppressDeprecat === void 0 ? process.env.MUI_SUPPRESS_DEPRECATION_WARNINGS : _ref$suppressDeprecat,
       _ref$useNextVariants = _ref.useNextVariants,
-      useNextVariants = _ref$useNextVariants === void 0 ? false : _ref$useNextVariants,
+      useNextVariants = _ref$useNextVariants === void 0 ? Boolean(global.__MUI_USE_NEXT_TYPOGRAPHY_VARIANTS__) : _ref$useNextVariants,
+      _ref$suppressWarning = _ref.suppressWarning,
+      suppressWarning = _ref$suppressWarning === void 0 ? false : _ref$suppressWarning,
       allVariants = _ref.allVariants,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["fontFamily", "fontSize", "fontWeightLight", "fontWeightRegular", "fontWeightMedium", "htmlFontSize", "suppressDeprecationWarnings", "useNextVariants", "allVariants"]);
+      other = (0, _objectWithoutProperties2.default)(_ref, ["fontFamily", "fontSize", "fontWeightLight", "fontWeightRegular", "fontWeightMedium", "htmlFontSize", "useNextVariants", "suppressWarning", "allVariants"]);
 
-   true ? (0, _warning.default)(!Object.keys(other).some(function (variant) {
-    return _typographyMigration.default.deprecatedVariants.includes(variant);
-  }), 'Material-UI: You are passing a deprecated variant to ' + "createTypography. ".concat(_typographyMigration.default.migrationGuideMessage)) : undefined;
-   true ? (0, _warning.default)(useNextVariants || !Object.keys(other).some(function (variant) {
-    return _typographyMigration.default.restyledVariants.includes(variant);
-  }), 'Material-UI: You are passing a variant to createTypography ' + 'that will be restyled in the next major release, without indicating that you ' + "are using typography v2 (set `useNextVariants` to true. ".concat(_typographyMigration.default.migrationGuideMessage)) : undefined;
+   true ? (0, _warning.default)(useNextVariants || suppressWarning, 'Material-UI: you are using the deprecated typography variants ' + 'that will be removed in the next major release.' + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2') : undefined;
   var coef = fontSize / 14;
 
   var pxToRem = function pxToRem(size) {
@@ -5447,20 +5606,19 @@ function createTypography(palette, typography) {
     fontWeightLight: fontWeightLight,
     fontWeightRegular: fontWeightRegular,
     fontWeightMedium: fontWeightMedium
-  }, oldVariants, useNextVariants ? (0, _extends2.default)({}, nextVariants, {
+  }, oldVariants, nextVariants, useNextVariants ? {
     body1: nextVariants.body1Next,
     body2: nextVariants.body2Next,
     button: nextVariants.buttonNext,
     caption: nextVariants.captionNext
-  }) : nextVariants, {
-    suppressDeprecationWarnings: suppressDeprecationWarnings,
+  } : {}, {
     useNextVariants: useNextVariants
   }), other, {
     clone: false // No need to clone deep
 
   });
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../process/browser.js */ "./node_modules/process/browser.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -5550,7 +5708,7 @@ function getThemeProps(params) {
       name = params.name,
       props = params.props;
 
-  if (!name || !theme.props || !theme.props[name]) {
+  if (!theme.props || !name || !theme.props[name]) {
     return props;
   } // Resolve default props, code borrow from React source.
   // https://github.com/facebook/react/blob/15a8f031838a553e41c0b66eb1bcf1da8448104d/packages/react/src/ReactElement.js#L221
@@ -5642,16 +5800,14 @@ function mergeClasses() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var baseClasses = options.baseClasses,
       newClasses = options.newClasses,
-      Component = options.Component,
-      _options$noBase = options.noBase,
-      noBase = _options$noBase === void 0 ? false : _options$noBase;
+      Component = options.Component;
 
   if (!newClasses) {
     return baseClasses;
   }
 
   return (0, _extends2.default)({}, baseClasses, Object.keys(newClasses).reduce(function (accumulator, key) {
-     true ? (0, _warning.default)(baseClasses[key] || noBase || !newClasses[key], ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not implemented in ".concat((0, _getDisplayName.default)(Component), "."), "You can only override one of the following: ".concat(Object.keys(baseClasses).join(','))].join('\n')) : undefined;
+     true ? (0, _warning.default)(baseClasses[key] || !newClasses[key], ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not implemented in ".concat((0, _getDisplayName.default)(Component), "."), "You can only override one of the following: ".concat(Object.keys(baseClasses).join(','))].join('\n')) : undefined;
      true ? (0, _warning.default)(!newClasses[key] || typeof newClasses[key] === 'string', ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not valid for ".concat((0, _getDisplayName.default)(Component), "."), "You need to provide a non empty string instead of: ".concat(newClasses[key], ".")].join('\n')) : undefined;
 
     if (newClasses[key]) {
@@ -5663,6 +5819,46 @@ function mergeClasses() {
 }
 
 var _default = mergeClasses;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/styles/multiKeyStore.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/styles/multiKeyStore.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+// Used https://github.com/thinkloop/multi-key-cache as inspiration
+var multiKeyStore = {
+  set: function set(cache, key1, key2, value) {
+    var subCache = cache.get(key1);
+
+    if (!subCache) {
+      subCache = new Map();
+      cache.set(key1, subCache);
+    }
+
+    subCache.set(key2, value);
+  },
+  get: function get(cache, key1, key2) {
+    var subCache = cache.get(key1);
+    return subCache ? subCache.get(key2) : undefined;
+  },
+  delete: function _delete(cache, key1, key2) {
+    var subCache = cache.get(key1);
+    subCache.delete(key2);
+  }
+};
+var _default = multiKeyStore;
 exports.default = _default;
 
 /***/ }),
@@ -5786,13 +5982,11 @@ exports.default = exports.CHANNEL = void 0;
 
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
 
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
 // Same value used by react-jss
 var CHANNEL = '__THEMING__';
 exports.CHANNEL = CHANNEL;
 var themeListener = {
-  contextTypes: (0, _defineProperty2.default)({}, CHANNEL, _propTypes.default.object),
+  contextTypes: (0, _defineProperty2.default)({}, CHANNEL, function () {}),
   initial: function initial(context) {
     if (!context[CHANNEL]) {
       return null;
@@ -5935,33 +6129,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/core/styles/typographyMigration.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@material-ui/core/styles/typographyMigration.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var typographyMigration =  false ? undefined : {
-  // these variants will be removed in the next major
-  deprecatedVariants: ['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'],
-  // these variants will change appearance in the next major
-  // to get the new style use set `useNewVariants` in Typography props
-  restyledVariants: ['body1', 'body2', 'caption', 'button'],
-  migrationGuideMessage: '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2'
-};
-var _default = typographyMigration;
-exports.default = _default;
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/core/styles/withStyles.js":
 /*!*************************************************************!*\
   !*** ./node_modules/@material-ui/core/styles/withStyles.js ***!
@@ -6013,6 +6180,8 @@ var _jssPreset = _interopRequireDefault(__webpack_require__(/*! ./jssPreset */ "
 
 var _mergeClasses = _interopRequireDefault(__webpack_require__(/*! ./mergeClasses */ "./node_modules/@material-ui/core/styles/mergeClasses.js"));
 
+var _multiKeyStore = _interopRequireDefault(__webpack_require__(/*! ./multiKeyStore */ "./node_modules/@material-ui/core/styles/multiKeyStore.js"));
+
 var _createMuiTheme = _interopRequireDefault(__webpack_require__(/*! ./createMuiTheme */ "./node_modules/@material-ui/core/styles/createMuiTheme.js"));
 
 var _themeListener = _interopRequireDefault(__webpack_require__(/*! ./themeListener */ "./node_modules/@material-ui/core/styles/themeListener.js"));
@@ -6054,7 +6223,11 @@ function getDefaultTheme() {
     return defaultTheme;
   }
 
-  defaultTheme = (0, _createMuiTheme.default)();
+  defaultTheme = (0, _createMuiTheme.default)({
+    typography: {
+      suppressWarning: true
+    }
+  });
   return defaultTheme;
 } // Link a style sheet with a component.
 // It does not modify the component passed to it;
@@ -6073,10 +6246,10 @@ var withStyles = function withStyles(stylesOrCreator) {
         name = options.name,
         styleSheetOptions = (0, _objectWithoutProperties2.default)(options, ["withTheme", "flip", "name"]);
     var stylesCreator = (0, _getStylesCreator.default)(stylesOrCreator);
-    var listenToTheme = stylesCreator.themingEnabled || withTheme || typeof name === 'string';
+    var listenToTheme = stylesCreator.themingEnabled || typeof name === 'string' || withTheme;
     indexCounter += 1;
     stylesCreator.options.index = indexCounter;
-     true ? (0, _warning.default)(indexCounter < 0, ['Material-UI: you might have a memory leak.', 'The indexCounter is not supposed to grow that much.'].join(' ')) : undefined;
+     true ? (0, _warning.default)(indexCounter < 0, ['Material-UI: you might have a memory leak.', 'The indexCounter is not supposed to grow that much.'].join('\n')) : undefined;
 
     var WithStyles =
     /*#__PURE__*/
@@ -6088,14 +6261,9 @@ var withStyles = function withStyles(stylesOrCreator) {
 
         (0, _classCallCheck2.default)(this, WithStyles);
         _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(WithStyles).call(this, props, context));
-        _this.disableStylesGeneration = false;
-        _this.jss = null;
-        _this.sheetOptions = null;
-        _this.sheetsManager = sheetsManager;
-        _this.stylesCreatorSaved = null;
-        _this.theme = null;
-        _this.unsubscribeId = null;
         _this.jss = context[_reactJssContext.default.jss] || jss;
+        _this.sheetsManager = sheetsManager;
+        _this.unsubscribeId = null;
         var muiThemeProviderOptions = context.muiThemeProviderOptions;
 
         if (muiThemeProviderOptions) {
@@ -6103,6 +6271,7 @@ var withStyles = function withStyles(stylesOrCreator) {
             _this.sheetsManager = muiThemeProviderOptions.sheetsManager;
           }
 
+          _this.sheetsCache = muiThemeProviderOptions.sheetsCache;
           _this.disableStylesGeneration = muiThemeProviderOptions.disableStylesGeneration;
         } // Attach the stylesCreator to the instance of the component as in the context
         // of react-hot-loader the hooks can be executed in a different closure context:
@@ -6176,18 +6345,19 @@ var withStyles = function withStyles(stylesOrCreator) {
       }, {
         key: "getClasses",
         value: function getClasses() {
-          // Tracks if either the rendered classes or classes prop has changed,
+          if (this.disableStylesGeneration) {
+            return this.props.classes || {};
+          } // Tracks if either the rendered classes or classes prop has changed,
           // requiring the generation of a new finalized classes object.
+
+
           var generate = false;
 
-          if (!this.disableStylesGeneration) {
-            var sheetManager = this.sheetsManager.get(this.stylesCreatorSaved);
-            var sheetsManagerTheme = sheetManager.get(this.theme);
+          var sheetManager = _multiKeyStore.default.get(this.sheetsManager, this.stylesCreatorSaved, this.theme);
 
-            if (sheetsManagerTheme.sheet.classes !== this.cacheClasses.lastJSS) {
-              this.cacheClasses.lastJSS = sheetsManagerTheme.sheet.classes;
-              generate = true;
-            }
+          if (sheetManager.sheet.classes !== this.cacheClasses.lastJSS) {
+            this.cacheClasses.lastJSS = sheetManager.sheet.classes;
+            generate = true;
           }
 
           if (this.props.classes !== this.cacheClasses.lastProp) {
@@ -6199,8 +6369,7 @@ var withStyles = function withStyles(stylesOrCreator) {
             this.cacheClasses.value = (0, _mergeClasses.default)({
               baseClasses: this.cacheClasses.lastJSS,
               newClasses: this.props.classes,
-              Component: Component,
-              noBase: this.disableStylesGeneration
+              Component: Component
             });
           }
 
@@ -6214,42 +6383,35 @@ var withStyles = function withStyles(stylesOrCreator) {
           }
 
           var stylesCreatorSaved = this.stylesCreatorSaved;
-          var sheetManager = this.sheetsManager.get(stylesCreatorSaved);
+
+          var sheetManager = _multiKeyStore.default.get(this.sheetsManager, stylesCreatorSaved, theme);
 
           if (!sheetManager) {
-            sheetManager = new Map();
-            this.sheetsManager.set(stylesCreatorSaved, sheetManager);
-          }
-
-          var sheetManagerTheme = sheetManager.get(theme);
-
-          if (!sheetManagerTheme) {
-            sheetManagerTheme = {
+            sheetManager = {
               refs: 0,
               sheet: null
             };
-            sheetManager.set(theme, sheetManagerTheme);
+
+            _multiKeyStore.default.set(this.sheetsManager, stylesCreatorSaved, theme, sheetManager);
           }
 
-          if (sheetManagerTheme.refs === 0) {
-            var styles = stylesCreatorSaved.create(theme, name);
-            var meta = name;
+          if (sheetManager.refs === 0) {
+            var sheet;
 
-            if ("development" !== 'production' && !meta) {
-              meta = (0, _getDisplayName.default)(Component);
-               true ? (0, _warning.default)(typeof meta === 'string', ['Material-UI: the component displayName is invalid. It needs to be a string.', "Please fix the following component: ".concat(Component, ".")].join('\n')) : undefined;
+            if (this.sheetsCache) {
+              sheet = _multiKeyStore.default.get(this.sheetsCache, stylesCreatorSaved, theme);
             }
 
-            var sheet = this.jss.createStyleSheet(styles, (0, _extends3.default)({
-              meta: meta,
-              classNamePrefix: meta,
-              flip: typeof flip === 'boolean' ? flip : theme.direction === 'rtl',
-              link: false
-            }, this.sheetOptions, stylesCreatorSaved.options, {
-              name: name
-            }, styleSheetOptions));
-            sheetManagerTheme.sheet = sheet;
-            sheet.attach();
+            if (!sheet) {
+              sheet = this.createSheet(theme);
+              sheet.attach();
+
+              if (this.sheetsCache) {
+                _multiKeyStore.default.set(this.sheetsCache, stylesCreatorSaved, theme, sheet);
+              }
+            }
+
+            sheetManager.sheet = sheet;
             var sheetsRegistry = this.context[_reactJssContext.default.sheetsRegistry];
 
             if (sheetsRegistry) {
@@ -6257,7 +6419,28 @@ var withStyles = function withStyles(stylesOrCreator) {
             }
           }
 
-          sheetManagerTheme.refs += 1;
+          sheetManager.refs += 1;
+        }
+      }, {
+        key: "createSheet",
+        value: function createSheet(theme) {
+          var styles = this.stylesCreatorSaved.create(theme, name);
+          var meta = name;
+
+          if ("development" !== 'production' && !meta) {
+            meta = (0, _getDisplayName.default)(Component);
+             true ? (0, _warning.default)(typeof meta === 'string', ['Material-UI: the component displayName is invalid. It needs to be a string.', "Please fix the following component: ".concat(Component, ".")].join('\n')) : undefined;
+          }
+
+          var sheet = this.jss.createStyleSheet(styles, (0, _extends3.default)({
+            meta: meta,
+            classNamePrefix: meta,
+            flip: typeof flip === 'boolean' ? flip : theme.direction === 'rtl',
+            link: false
+          }, this.sheetOptions, this.stylesCreatorSaved.options, {
+            name: name
+          }, styleSheetOptions));
+          return sheet;
         }
       }, {
         key: "detach",
@@ -6266,18 +6449,18 @@ var withStyles = function withStyles(stylesOrCreator) {
             return;
           }
 
-          var stylesCreatorSaved = this.stylesCreatorSaved;
-          var sheetManager = this.sheetsManager.get(stylesCreatorSaved);
-          var sheetManagerTheme = sheetManager.get(theme);
-          sheetManagerTheme.refs -= 1;
+          var sheetManager = _multiKeyStore.default.get(this.sheetsManager, this.stylesCreatorSaved, theme);
 
-          if (sheetManagerTheme.refs === 0) {
-            sheetManager.delete(theme);
-            this.jss.removeStyleSheet(sheetManagerTheme.sheet);
+          sheetManager.refs -= 1;
+
+          if (sheetManager.refs === 0) {
+            _multiKeyStore.default.delete(this.sheetsManager, this.stylesCreatorSaved, theme);
+
+            this.jss.removeStyleSheet(sheetManager.sheet);
             var sheetsRegistry = this.context[_reactJssContext.default.sheetsRegistry];
 
             if (sheetsRegistry) {
-              sheetsRegistry.remove(sheetManagerTheme.sheet);
+              sheetsRegistry.remove(sheetManager.sheet);
             }
           }
         }
@@ -6369,6 +6552,87 @@ var zIndex = {
   tooltip: 1500
 };
 var _default = zIndex;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/utils/chainPropTypes.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/utils/chainPropTypes.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function chainPropTypes(propType1, propType2) {
+  /* istanbul ignore if */
+  if (false) {}
+
+  return function validate() {
+    return propType1.apply(void 0, arguments) || propType2.apply(void 0, arguments);
+  };
+}
+
+var _default = chainPropTypes;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/utils/exactProp.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@material-ui/core/utils/exactProp.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.specialProperty = void 0;
+
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
+
+var _extends3 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
+
+// This module is based on https://github.com/airbnb/prop-types-exact repository.
+// However, in order to reduce the number of dependencies and to remove some extra safe checks
+// the module was forked.
+// Only exported for test purposes.
+var specialProperty = "exact-prop: \u200B";
+exports.specialProperty = specialProperty;
+
+function exactProp(propTypes) {
+  /* istanbul ignore if */
+  if (false) {}
+
+  return (0, _extends3.default)({}, propTypes, (0, _defineProperty2.default)({}, specialProperty, function (props) {
+    var unsupportedProps = Object.keys(props).filter(function (prop) {
+      return !propTypes.hasOwnProperty(prop);
+    });
+
+    if (unsupportedProps.length > 0) {
+      return new Error("The following properties are not supported: ".concat(unsupportedProps.map(function (prop) {
+        return "`".concat(prop, "`");
+      }).join(', '), ". Please remove them."));
+    }
+
+    return null;
+  }));
+}
+
+var _default = exactProp;
 exports.default = _default;
 
 /***/ }),
@@ -27410,7 +27674,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Page */ "./components/Page.js");
 
-var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\StreetSmarts\\street-smarts-prototype\\newFrontend\\frontend\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\pages\\_app.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
