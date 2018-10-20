@@ -3,6 +3,19 @@ import Meta from './Meta';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Nav from './Nav';
 // import withMui from './hocs/withMui';
+import ContextProvider from './ContextProvider';
+
+// import React from 'react';
+// import Head from 'next/head';
+// import injectTapEventPlugin from 'react-tap-event-plugin';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+
+try {
+  injectTapEventPlugin();
+} catch (e) {}
+
+const muiTheme = createMuiTheme({ userAgent: false });
 
 const theme = {
   red: '#FF0000',
@@ -56,13 +69,17 @@ a {
 class Page extends Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
-        <StyledPage>
-          <Meta />
-          <Nav />
-          <Inner>{this.props.children}</Inner>
-        </StyledPage>
-      </ThemeProvider>
+      <ContextProvider>
+        <ThemeProvider theme={theme}>
+          <MuiThemeProvider theme={muiTheme}>
+            <StyledPage>
+              <Meta />
+              <Nav />
+              <Inner>{this.props.children}</Inner>
+            </StyledPage>
+          </MuiThemeProvider>
+        </ThemeProvider>
+      </ContextProvider>
     );
   }
 }

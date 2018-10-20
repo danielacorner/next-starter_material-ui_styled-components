@@ -297,16 +297,10 @@ var _this = undefined,
 
 
 var Nav = function Nav() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ContextProvider__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ContextProvider__WEBPACK_IMPORTED_MODULE_8__["AppContext"].Consumer, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ContextProvider__WEBPACK_IMPORTED_MODULE_8__["AppContext"].Consumer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
     },
     __self: this
   }, function (context) {
@@ -314,13 +308,13 @@ var Nav = function Nav() {
       position: "static",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 13
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 14
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -328,13 +322,13 @@ var Nav = function Nav() {
       "aria-label": "Menu",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 15
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_6___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 16
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -342,39 +336,39 @@ var Nav = function Nav() {
       color: "inherit",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 18
       },
       __self: this
     }, "Street Smart"), context.isLoggedIn && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 22
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 23
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 24
       },
       __self: this
     }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/resources",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 26
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 27
       },
       __self: this
     }, "Resources")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -382,13 +376,13 @@ var Nav = function Nav() {
       color: "inherit",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 29
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_7___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 30
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Menu, {
@@ -406,25 +400,25 @@ var Nav = function Nav() {
       onClose: _this.handleClose,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 32
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
       onClick: _this.handleClose,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 46
       },
       __self: this
     }, "Profile"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuItem, {
       onClick: _this.handleClose,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 47
       },
       __self: this
     }, "My account")))));
-  }));
+  });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
@@ -446,6 +440,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
+/* harmony import */ var _ContextProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ContextProvider */ "./components/ContextProvider.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\components\\Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -482,6 +481,43 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
  // import withMui from './hocs/withMui';
+
+ // import React from 'react';
+// import Head from 'next/head';
+// import injectTapEventPlugin from 'react-tap-event-plugin';
+
+
+
+
+try {
+  injectTapEventPlugin();
+} catch (e) {}
+
+var muiTheme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["createMuiTheme"])({
+  userAgent: false
+}); // export default class extends React.Component {
+//   render() {
+//     return (
+//       <MuiThemeProvider theme={muiTheme}>
+//         <div>
+//           <Head>
+//             <title>Next.js 2 with Material-UI Example</title>
+//             <meta
+//               name="viewport"
+//               content="initial-scale=1.0, width=device-width"
+//             />
+//           </Head>
+//           {/* <AppBar
+//             title="Page Title"
+//             iconClassNameRight="muidocs-icon-navigation-expand-more"
+//           /> */}
+//           <h1>Page content</h1>
+//           <p>Next.js 2 with Material-UI Example</p>
+//         </div>
+//       </MuiThemeProvider>
+//     );
+//   }
+// }
 
 var theme = {
   red: '#FF0000',
@@ -520,38 +556,51 @@ function (_Component) {
   _createClass(Page, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_2__["ThemeProvider"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ContextProvider__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_2__["ThemeProvider"], {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 99
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["MuiThemeProvider"], {
+        theme: muiTheme,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 101
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 102
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 103
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 104
         },
         __self: this
-      }, this.props.children)));
+      }, this.props.children)))));
     }
   }]);
 
@@ -559,6 +608,78 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Page); // export default withMui(Page);
+
+/***/ }),
+
+/***/ "./getPageContext.js":
+/*!***************************!*\
+  !*** ./getPageContext.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getPageContext; });
+/* harmony import */ var jss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jss */ "jss");
+/* harmony import */ var jss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/colors/purple */ "@material-ui/core/colors/purple");
+/* harmony import */ var _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/colors/green */ "@material-ui/core/colors/green");
+/* harmony import */ var _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3__);
+/* eslint-disable no-underscore-dangle */
+
+
+
+ // A theme with custom primary and secondary color.
+// It's optional.
+
+var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"])({
+  palette: {
+    primary: {
+      light: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[300],
+      main: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[500],
+      dark: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[700]
+    },
+    secondary: {
+      light: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[300],
+      main: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[500],
+      dark: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[700]
+    }
+  },
+  typography: {
+    useNextVariants: true
+  }
+});
+
+function createPageContext() {
+  return {
+    theme: theme,
+    // This is needed in order to deduplicate the injection of CSS in the page.
+    sheetsManager: new Map(),
+    // This is needed in order to inject the critical CSS.
+    sheetsRegistry: new jss__WEBPACK_IMPORTED_MODULE_0__["SheetsRegistry"](),
+    // The standard class name generator.
+    generateClassName: Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createGenerateClassName"])()
+  };
+}
+
+function getPageContext() {
+  // Make sure to create a new context for every server-side request so that data
+  // isn't shared between connections (which would be bad).
+  if (true) {
+    return createPageContext();
+  } // Reuse context on the client-side.
+
+
+  if (!global.__INIT_MATERIAL_UI__) {
+    global.__INIT_MATERIAL_UI__ = createPageContext();
+  }
+
+  return global.__INIT_MATERIAL_UI__;
+}
 
 /***/ }),
 
@@ -578,6 +699,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "next/app");
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Page */ "./components/Page.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "@material-ui/core/CssBaseline");
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-jss/lib/JssProvider */ "react-jss/lib/JssProvider");
+/* harmony import */ var react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _getPageContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../getPageContext */ "./getPageContext.js");
 
 var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\pages\\_app.js";
 
@@ -609,18 +737,38 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
  // import { ApolloProvider } from 'react-apollo';
 
+
+
+
+
+
 var MyApp =
 /*#__PURE__*/
 function (_App) {
   _inherits(MyApp, _App);
 
-  function MyApp() {
+  function MyApp(props) {
+    var _this;
+
     _classCallCheck(this, MyApp);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MyApp).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(MyApp).call(this, props));
+    _this.pageContext = Object(_getPageContext__WEBPACK_IMPORTED_MODULE_7__["default"])();
+    return _this;
   }
 
   _createClass(MyApp, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      // Remove the server-side injected CSS.
+      var jssStyles = document.querySelector('#jss-server-side');
+
+      if (jssStyles && jssStyles.parentNode) {
+        jssStyles.parentNode.removeChild(jssStyles);
+      }
+    } // server-side rendering for styled-components
+
+  }, {
     key: "render",
     value: function render() {
       var _this$props = this.props,
@@ -630,22 +778,46 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_2__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 36
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        registry: this.pageContext.sheetsRegistry,
+        generateClassName: this.pageContext.generateClassName,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 38
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({}, pageProps, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["MuiThemeProvider"], {
+        theme: this.pageContext.theme,
+        sheetsManager: this.pageContext.sheetsManager,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 44
         },
         __self: this
-      }))));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({
+        pageContext: this.pageContext
+      }, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }))))));
     }
   }], [{
     key: "getInitialProps",
@@ -734,6 +906,17 @@ module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
 
+/***/ "@material-ui/core/CssBaseline":
+/*!************************************************!*\
+  !*** external "@material-ui/core/CssBaseline" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CssBaseline");
+
+/***/ }),
+
 /***/ "@material-ui/core/IconButton":
 /*!***********************************************!*\
   !*** external "@material-ui/core/IconButton" ***!
@@ -767,6 +950,39 @@ module.exports = require("@material-ui/core/Typography");
 
 /***/ }),
 
+/***/ "@material-ui/core/colors/green":
+/*!*************************************************!*\
+  !*** external "@material-ui/core/colors/green" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/colors/green");
+
+/***/ }),
+
+/***/ "@material-ui/core/colors/purple":
+/*!**************************************************!*\
+  !*** external "@material-ui/core/colors/purple" ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/colors/purple");
+
+/***/ }),
+
+/***/ "@material-ui/core/styles":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/styles" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles");
+
+/***/ }),
+
 /***/ "@material-ui/icons/AccountCircle":
 /*!***************************************************!*\
   !*** external "@material-ui/icons/AccountCircle" ***!
@@ -786,6 +1002,17 @@ module.exports = require("@material-ui/icons/AccountCircle");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/Menu");
+
+/***/ }),
+
+/***/ "jss":
+/*!**********************!*\
+  !*** external "jss" ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("jss");
 
 /***/ }),
 
@@ -830,6 +1057,17 @@ module.exports = require("next/link");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-jss/lib/JssProvider":
+/*!********************************************!*\
+  !*** external "react-jss/lib/JssProvider" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-jss/lib/JssProvider");
 
 /***/ }),
 

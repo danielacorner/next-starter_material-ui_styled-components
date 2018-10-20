@@ -4,5 +4,10 @@
     "titleBar.inactiveForeground": "#000000CC",
     "titleBar.activeBackground": "#FFC600",
     "titleBar.inactiveBackground": "#FFC600CC"
+  },
+  "files.exclude": {
+    "**/.next": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true
   }
 }

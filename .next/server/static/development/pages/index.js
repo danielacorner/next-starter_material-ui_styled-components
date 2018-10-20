@@ -93,25 +93,19 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./components/Welcome.js":
+/*!*******************************!*\
+  !*** ./components/Welcome.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _default; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Welcome; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\components\\Welcome.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -131,105 +125,113 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+ // import { Query } from 'react-apollo';
 
- // import injectTapEventPlugin from 'react-tap-event-plugin';
-
-
-
-
-try {
-  injectTapEventPlugin();
-} catch (e) {}
-
-var muiTheme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createMuiTheme"])({
-  userAgent: false
-});
-
-var _default =
+var Welcome =
 /*#__PURE__*/
-function (_React$Component) {
-  _inherits(_default, _React$Component);
+function (_Component) {
+  _inherits(Welcome, _Component);
 
-  function _default() {
-    _classCallCheck(this, _default);
+  function Welcome() {
+    _classCallCheck(this, Welcome);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(_default).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Welcome).apply(this, arguments));
   }
 
-  _createClass(_default, [{
+  _createClass(Welcome, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["MuiThemeProvider"], {
-        theme: muiTheme,
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 7
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 8
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      }, "Next.js 2 with Material-UI Example"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-        name: "viewport",
-        content: "initial-scale=1.0, width=device-width",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        title: "Page Title",
-        iconClassNameRight: "muidocs-icon-navigation-expand-more",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      }, "Page content"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }, "Next.js 2 with Material-UI Example")));
+      }, "Welcome!"));
     }
   }]);
 
-  return _default;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component); // import Link from 'next/link';
-// import Welcome from '../components/Welcome';
-// const Home = () => {
-//   return (
-//     <div>
-//       <Welcome />
-//     </div>
-//   );
-// };
-// export default Home;
+  return Welcome;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
+/***/ }),
+
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Welcome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Welcome */ "./components/Welcome.js");
+var _jsxFileName = "C:\\Users\\Daniel\\Documents\\code\\next starter\\pages\\index.js";
+
+// import React from 'react';
+// import Head from 'next/head';
+// // import injectTapEventPlugin from 'react-tap-event-plugin';
+// import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+// import AppBar from '@material-ui/core/AppBar';
+// try {
+//   injectTapEventPlugin();
+// } catch (e) {}
+// const muiTheme = createMuiTheme({ userAgent: false });
+// export default class extends React.Component {
+//   render() {
+//     return (
+//       <MuiThemeProvider theme={muiTheme}>
+//         <div>
+//           <Head>
+//             <title>Next.js 2 with Material-UI Example</title>
+//             <meta
+//               name="viewport"
+//               content="initial-scale=1.0, width=device-width"
+//             />
+//           </Head>
+//           {/* <AppBar
+//             title="Page Title"
+//             iconClassNameRight="muidocs-icon-navigation-expand-more"
+//           /> */}
+//           <h1>Page content</h1>
+//           <p>Next.js 2 with Material-UI Example</p>
+//         </div>
+//       </MuiThemeProvider>
+//     );
+//   }
+// }
+
+
+
+var Home = function Home() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Welcome__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
@@ -245,36 +247,14 @@ module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
 /***/ }),
 
-/***/ "@material-ui/core/AppBar":
-/*!*******************************************!*\
-  !*** external "@material-ui/core/AppBar" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/AppBar");
-
-/***/ }),
-
-/***/ "@material-ui/core/styles":
-/*!*******************************************!*\
-  !*** external "@material-ui/core/styles" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/styles");
-
-/***/ }),
-
-/***/ "next/head":
+/***/ "next/link":
 /*!****************************!*\
-  !*** external "next/head" ***!
+  !*** external "next/link" ***!
   \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("next/head");
+module.exports = require("next/link");
 
 /***/ }),
 
